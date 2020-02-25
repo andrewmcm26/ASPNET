@@ -13,4 +13,7 @@
   <ItemGroup>
     <Folder Include="Views\Product\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\InsertProduct.cshtml" />
+  </ItemGroup>
 </Project>

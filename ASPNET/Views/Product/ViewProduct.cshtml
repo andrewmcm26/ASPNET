@@ -25,3 +25,10 @@
     <a href="/Product/UpdateProduct/@Model.ProductID"> Update this product</a>
 </div>
 
+<div style="display:block">
+    @using (Html.BeginForm("DeleteProduct", "Product", "Delete"))//What does the post do?
+     {
+        <input type="hidden" asp-for="ProductID" value="@Model.ProductID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this product" />
+     }
+</div>
